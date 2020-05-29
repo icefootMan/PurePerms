@@ -1,0 +1,169 @@
+
+# PurePerms by 64FF00 (xktiverz@gmail.com, @64ff00 for Twitter)
+#Translated by iceFootMan 
+---
+messages-version: "1.0.0_1"
+language: "ro"
+cmds:
+  addgroup:
+    desc: "Adauga un Nou Grup in Lista."
+    usage: "Usage: /addgroup <group>"
+    messages:
+      group_added_successfully: "%var0% A Fost Adaugat La Lista Grupurilor Cu Success."
+      group_already_exists: "Grupul %var0% Deja Exista."
+      invalid_group_name: "Nume De Grup Invalid."
+  addparent:
+    desc: "Adauga un Grup La List De Inheritance A Unui Grup."
+    usage: "Usage: /addparent <target_group> <parent_group>"
+    messages:
+      addparent_successfully: "%var0% A Fost Cu Success Adaugat la inheritancea Grupului %var1% inheritance."	 
+      target_already_inherits: "Grupul %var0% Deja inherita %var1%."     
+  defgroup:
+    desc: "Seteaza Grupul Default"
+    usage: "Usage: /defgroup <group> [world]"
+    messages:
+      defgroup_successfully: "Grupul %var0% a Fost Setat Ca Grup Default Cu Success."
+      group_not_exist: "Grupul %var0% Nu Exista."
+      level_not_exist: "Lumea %var0% Nu Exista."
+  fperms:
+    desc: "Arata o Lista De Permisiuni Pentru un Spatiu Specific."
+    usage: "Usage: /fperms <plugin>"
+    messages:
+      no_plugin_perms: "Pluginul %var0% Nu Are Nicio Permisiune."
+      plugin_not_exist: "Pluginul %var0% Nu Exista."
+      plugin_perms_list: "Lista Permisiunilo4 Pentru Pluginul %var0% Sunt: (%var1% / %var2%) : "
+  groups:
+    desc: "Arata o Lista Cu Toate Grupurile"
+    messages:
+      all_registered_groups: "Toate Grupurule Inregistrate: %var0%"
+  grpinfo:
+    desc: "Arata Informatii Despre Un Grup."
+    usage: "Usage: /grpinfo <group> [world]"
+    messages:
+      group_not_exist: "Grupul %var0% Nu Exista."
+      grpinfo_header: "-- Informatii Despre Grupul %var0% --" 
+      grpinfo_alias: "ALIAS: %var0%"
+      grpinfo_default: "DEFAULT: %var0%" 
+      grpinfo_parents: "PARENTS: %var0%"	  
+      level_not_exist: "Lumea %var0% Nu Exista."
+  listgperms: 
+    desc: "Arata o Lista Cu Toate Permisiunile de La Un Grup."
+    usage: "Usage: /listgperms <group> <page> [world]"
+    messages:
+      group_not_exist: "Grupul %var0% Nu Exista."
+      group_perms_list: "Lista Permisiunilor De La Grupul: %var0% (%var1% / %var2%) : "
+      level_not_exist: "Lumea %var0% Nu Exista."
+      no_group_perms: "Grupul %var0% Nu Are Nicio Permisiune."
+  listuperms: 
+    desc: "Arata o Lista Cu Toate Permisiunile a Unui Player."
+    usage: "Usage: /listuperms <player> <page> [world]"
+    messages:
+      level_not_exist: "Lumea %var0% Nu Exista."
+      no_user_perms: "Playerul %var0% Nu Are Nicio Permisiune."
+      user_perms_list: "Lista Cu Toate Permisiunile A Unui Player %var0% (%var1% / %var2%) : " 
+  ppinfo: 
+    desc: "Arata Informatii PurePerms"
+    messages:
+      ppinfo_console: "Folosesti PurePerms Versiunea v%var0% de %var1%. [Limba RO]."
+      ppinfo_player: "Acest Server Foloseste PurePerms Versiunea v%var0% de %var1% [Limba RO]."
+  ppreload: 
+    desc: "Configuratia PurePerms a Fost Reincarcata."
+    messages: 
+      successfully_reloaded: "Toate Configuratile Pluginulilor au Fost Reincarcate."
+  ppsudo:
+    desc: "Registreaza sau Te Logeaza in Contul Tau Noeul."
+    usage: "Usage: /ppsudo <login / register>"
+    messages:
+      already_registered: "Acest Cont Este Deja Inregistrat."
+      deauth_01: "Acest Server Foloseste Noeul v%var0% Sa Va Protejeze Contul."
+      deauth_02: "Trebuie sa Va Logati in Contul Dvs. Mai Intai."
+      deauth_03: "Va Rugam Inregistrativa sau Logativa La Contul Dvs. Folosind comanda /ppsudo"
+      invalid_sender: "Acesta Comanda Poate Fii Folosita Doar in-Joc."
+      login_usage: "Usage: /ppsudo login <password>"
+      not_registered: "Acest Cont Nu Este Inregistrat."
+      password_too_short: "Parola Dvs. Este Prea Scurta(%var0%)."
+      register_usage: "Usage: /ppsudo register <password>"
+      successfully_logged_in: "Acuma Sunteti Logat."	 
+      successfully_registered: "Contul Dvs. A Fos Inregistrat."
+      unregister_usage: "Usage: /ppsudo unregister <password>" 	
+  rmgroup: 
+    desc: "Sterge un Grup Din Lista Grupurilor."
+    usage: "Usage: /rmgroup <group>"
+    messages:
+      group_removed_successfully: "Grupul %var0% A Fost Cu Success Sters."
+      group_not_exist: "Grupul %var0% Nu Exista."
+      invalid_group_name: "Nume De Grup Invalid."
+  rmparent:
+    desc: "Sterge un Grup De La Lista De inheritance."
+    usage: "Usage: /rmparent <target_group> <parent_group>"
+    messages:
+      rmparent_successfully: "Grupul %var0% A Fost Sters din Lista De inheritance a Grupului %var1%."		  
+  setgperm: 
+    desc: "Adauga o Permisiune La Un Grup."
+    usage: "Usage: /setgperm <group> <permission> [world]"
+    messages:
+      gperm_added_successfully: "permisiunea %var0% A Fos Cu Success Adaugata La Grup."
+      group_not_exist: "Grupul %var0% Nu Exista."
+      level_not_exist: "Lumea %var0% Nu Exista."
+  setgroup: 
+    desc: "Seteaza un Grup Pentru un Player."
+    usage: "Usage: /setgroup <player> <group> <exp_time> [world]"
+    messages:
+      access_denied_01: "Nu ai Permisiunea Sa Setezi Grupul Playerului Cu Grupul %var0%."
+      access_denied_02: "Nu ai Permisiunea Sa Setezi Grupul Playerului Cu Grupul %var0%."
+      group_not_exist: "Grupul %var0% Nu Exista."
+      level_not_exist: "Lumea %var0% Nu Exista."
+      on_player_group_change: "Grupul Tau A Fost Schimbat La %var0%!"
+      setgroup_successfully: "Grupul %var0% a Fost Setat Cu Success La Acel Player."
+  setuperm: 
+    desc: "Adauga o Permisiune Unui Utilizator."
+    usage: "Usage: /setuperm <player> <permission> [world]"
+    messages:
+      level_not_exist: "Lumea %var0% Nu Exista."
+      uperm_added_successfully:"permisiunea %var0% a Fost Adaugata La Playerul %var1% Cu Success."
+  unsetgperm: 
+    desc: "Sterge o Permisiune Dintr-un Grup."
+    usage: "Usage: /unsetgperm <group> <permission> [world]"
+    messages:
+      gperm_removed_successfully: "permisiunea %var0% a Fost Stearsa Cu Success Din Grup."
+      group_not_exist: "Grupul %var0% Nu Exista."
+      level_not_exist: "Lumea %var0% Nu Exista."
+  unsetuperm: 
+    desc: "Sterge o Permisiune De La un Player."
+    usage: "Usage: /unsetuperm <player> <permission> [world]"
+    messages: 
+      level_not_exist: "Lumea %var0% Nu Exista."
+      uperm_removed_successfully: " Permisiunea %var0% A Fost Stearsa Din Grupul %var1% Cu Success."
+  usrinfo: 
+    desc: "Arata Informatii Despre un Player."
+    usage: "Usage: /usrinfo <player> [world]"
+    messages:
+      level_not_exist: "Lumea %var0% Nu Exista."
+      status_online: "ONLINE!"
+      status_offline: "OFFLINE..."
+      usrinfo_header: "-- User Information for %var0% --"
+      usrinfo_username: "USERNAME: %var0%"
+      usrinfo_status: "STATUS: %var0%"
+      usrinfo_ip: "IP: %var0%"
+      usrinfo_uuid: "UNIQUE ID: %var0%"
+      usrinfo_group: "GROUP: %var0%"
+      usrinfo_exp: "ExpTime: %var0%"
+      unknown: "UNKNOWN"
+logger_messages:
+  getConfigValue_01: "Keia %var0% nu a Fost Gasita in Config.yml."
+  getDefaultGroup_01: "Mai Mult De un Grup A Fost Setat Ca Default in Groups.yml."
+  getDefaultGroup_02: "Nu Sa Putut Gasi un Grup Default in Groups.yml."
+  getDefaultGroup_03: "Setare Grup Default Automat."
+  getGroup_01: "Grupul %var0% Nu a Fost Gasit."
+  getGroup_02: "Grupul %var0% are Date Invalide Sau Este Corupt."
+  onLoad_01: "Suportul MultiWorld Este Oprit."
+  onLoad_02: "Nu Uita Sa Setezi enable-multiworld-perms in Config.yml La True Daca Vrei Sa Folosesti Permisiuni Pe Lume."
+  onLoad_03: "Suportul MultiWorld Este Pornit."
+  registerPlayer: "Registram Playerul %var0%..."
+  setProvider_MySQL: "Data Providerul Pentru PurePerms a Fost Setat La MySQL."
+  setProvider_YAMLv1: "Data Providerul Pentru PurePerms a Fost Setat La YAMLv1."
+  setProvider_YAMLv2: "Data Providerul Pentru PurePerms a Fost Setat La YAMLv2"
+  setProvider_NotFound: "Providerul %var0% Nu Exista. Setare Providerului La Default (YAML)."
+  unregisterPlayer: "Unregistram Playerul %var0%..."
+  YAMLProvider_InvalidGroupsSettings: "Setari INVALIDE Pentru Groups.YML: Va Rugam Sa Verificati Daca ai un Groups.yml Invalid Sau Corupt."
+...
